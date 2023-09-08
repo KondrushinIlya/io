@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Квадраты с изменяемым размером</title>
+  <style>
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="square" onclick="changeSize(this)"></div>
+  <div class="square" onclick="changeSize(this)"></div>
+  <div class="square" onclick="changeSize(this)"></div>
+  <div class="square" onclick="changeSize(this)"></div>
+  <div class="square" onclick="changeSize(this)"></div>
+  <div class="square" onclick="changeSize(this)"></div>
+
+  <script>
+    function changeSize(element) {
+      if (element.style.width === '100px') {
+        element.style.width = '200px';
+        element.style.height = '200px';
+      } else {
+        element.style.width = '100px';
+        element.style.height = '100px';
+      }
+    }
+  </script>
+</body>
+</html>
